@@ -1,0 +1,452 @@
+@media screen and (min-width:1024px) and (max-width:1366px) {
+    
+    .wrap {
+        width: 100%;
+        padding: 0 30px;
+    }
+    
+    .katalog-beer .col-2 {
+        width: 100%;
+    }
+    
+    body.single-product .katalog-filter {
+        display: none;
+    }
+    
+    body.single-product .katalog-wrapper {
+        width: 100%;
+    }
+    
+    body.single-product .custom-attributes,
+    body.single-product .product-single-attr {
+        width: 45%;
+    }
+    
+    .payment-page .col-4-6 {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:320px) and (max-width:460px) {
+    
+    .wrap {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* header */
+    
+    .header-bottom-logo,
+    .header-top{
+        display: none;
+    }
+    
+    .header-bottom {
+        padding: 5px 0;
+        position: relative;
+    }
+    
+    .header-cart {
+        -webkit-transform: scale(0.7);
+        margin-right: 50px;
+    }
+    
+    .header-mobile-search {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    
+    .header-mobile-burger {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: block;
+    }
+    
+    .header-mobile-nav {
+        border-radius: 3px;
+        display: none;
+        position: absolute;
+        background: #212121;
+        box-shadow: 0 0 31px 21px #000;
+        padding: 10px;
+        width: calc(100% - 20px);
+        left: 10px;
+        top: 135px;
+        z-index: 1;
+    }
+    
+    .header-mobile-nav.show {
+        display: block;
+    }
+    
+    .header-mobile-nav a {
+        color: #fafafa;
+    }
+     
+    .header-mobile-search .svg {
+        fill: #fafafa;
+        width: 35px;
+    }
+    
+    .header-bottom-search {
+        display: none;
+        position: absolute;
+        top: 74px;
+        z-index: 1;
+        background: #222;
+        left: 0;
+        box-shadow: 0 0 31px 21px #000;
+    }
+    
+    .header-bottom-search.show {
+        display: block;
+    }
+    
+    .section-title>* {
+        font-size: 18px;
+    }
+    
+    /* global */
+    
+    .col-1-6,
+    .col-2-6,
+    .col-3-6,
+    .col-4-6,
+    .col-5-6,
+    .col-2,
+    .katalog-grid .col-1-6,
+    .katalog-grid .col-2-6,
+    .katalog-grid .col-3-6,
+    .katalog-grid .col-4-6,
+    .katalog-grid .col-5-6,
+    .katalog-grid>.col-3-6:nth-of-type(2n){
+        width: 100%;
+    }
+    
+    .katalog-grid .col-3-6 {
+        margin-right: 0;
+    }
+    
+    .padding-r-40,
+    .padding-r-20{
+        padding-right: 0;
+    }
+    
+    /* front page */
+    
+    .front-slider > .wrap > .dis-flex,
+    .front-future > .wrap > .dis-flex{
+        flex-wrap: wrap;
+    }
+    
+    .front-slider .katalog-beer-title {
+        font-size: 24px;
+        white-space: inherit;
+        min-width: inherit;
+    }
+    
+    .front-slider-desc {
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+    
+    .front-future-newest {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .empty-slot {
+        display: none;
+    }
+    
+    /* katalog */
+    
+    .katalog-page {
+        margin: 50px 0;
+    }
+    
+    /* katalog sidebar */
+    
+    .katalog-filter {
+        padding-right: 0;
+        display: none;
+    }
+    
+    .katalog-wrapper {
+        padding-left: 0;
+    }
+    
+    /* katalog single */
+    
+    .entry-summary .katalog-beer-title {
+        font-size: 42px;
+        left: auto;
+    }
+    
+    /* footer */
+    
+    #footer {
+        text-align: center;
+    }
+    
+    .footer-social .dis-flex {
+        justify-content: space-around;
+    }
+    
+    
+    
+    /* page producters */
+    
+    .producter {
+        padding: 20px;
+    }
+    
+    .producter-image {
+        position: static;
+    }
+    
+    .producter .katalog-beer-title {
+        font-size: 42px;
+        padding: 10px;
+        left: auto;
+    }
+    
+    .producter-goods {
+        display: none;
+    }
+    
+    /* START Make the cart table responsive */
+    /* http://css-tricks.com/responsive-data-tables/ */
+    @media screen and (max-width: 600px) {
+
+    /* Force table to not be like tables anymore */
+    .woocommerce table.shop_table,
+    .woocommerce table.shop_table thead,
+    .woocommerce table.shop_table tbody,
+    .woocommerce table.shop_table th,
+    .woocommerce table.shop_table td,
+    .woocommerce table.shop_table tr {
+    display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .woocommerce table.shop_table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    }
+
+    .woocommerce table.shop_table tr {
+    /*border: 1px solid #d2d3d3; */
+    }
+
+    .woocommerce table.shop_table td {
+    /* Behave like a "row" */
+    border: 1px solid #d2d3d3;
+    position: relative;
+    padding-left: 50% !important;
+    }
+
+    .woocommerce table.shop_table {
+    border: none;
+    }
+
+    .woocommerce table.shop_table td.product-spacer {
+    border-color: #FFF;
+    height: 10px;
+    }
+
+    .woocommerce table.shop_table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 25%;
+    padding-right: 10px;
+    white-space: nowrap;
+    }
+
+    /*
+    Label the data
+    */
+    .woocommerce table.shop_table td.product-remove:before {
+    content: "удалить";
+    }
+
+    .woocommerce table.shop_table td.product-thumbnail:before {
+    content: "изображение";
+    }
+
+    .woocommerce table.shop_table td.product-name:before {
+    content: "товар";
+    }
+
+    .woocommerce table.shop_table td.product-price:before {
+    content: "цена";
+    }
+
+    .woocommerce table.shop_table td.product-quantity:before {
+    content: "кол-во";
+    }
+
+    .woocommerce table.shop_table td.product-subtotal:before {
+    content: "итог";
+    }
+
+    .woocommerce table.shop_table td.product-total:before {
+    content: "сумма";
+    }
+
+    .woocommerce .quantity,
+    .woocommerce #content .quantity,
+    .woocommerce .quantity,
+    .woocommerce #content .quantity {
+    margin: 0;
+    }
+
+    .woocommerce table.cart td.actions,
+    .woocommerce #content table.cart td.actions {
+    text-align: left;
+    border:0;
+    padding-left: 0 !important;
+    }
+
+    .woocommerce table.cart td.actions .button.alt,
+    .woocommerce #content table.cart td.actions .button.alt {
+    float: left;
+    margin-top: 10px;
+    }
+
+    .woocommerce table.cart td.actions div,
+    .woocommerce #content table.cart td.actions div,
+    .woocommerce table.cart td.actions input,
+    .woocommerce #content table.cart td.actions input {
+    margin-bottom: 10px;
+    }
+
+    .woocommerce .cart-collaterals .cart_totals {
+    float: left;
+    width: 100%;
+    text-align: left;
+    }
+
+    .woocommerce .cart-collaterals .cart_totals th,
+    .woocommerce .cart-collaterals .cart_totals td {
+    border:0 !important;
+    }
+
+    .woocommerce .cart-collaterals .cart_totals table tr.cart-subtotal td,
+    .woocommerce .cart-collaterals .cart_totals table tr.shipping td,
+    .woocommerce .cart-collaterals .cart_totals table tr.total td {
+    padding-left: 6px !important;
+    }
+
+    .woocommerce table.shop_table tr.cart-subtotal td,
+    .woocommerce table.shop_table tr.shipping td,
+    .woocommerce table.shop_table tr.total td,
+    .woocommerce table.shop_table.order_details tfoot th,
+    .woocommerce table.shop_table.order_details tfoot td {
+    padding-left: 6px !important;
+    border:0 !important;
+    }
+
+    .woocommerce table.shop_table tbody {
+    padding-top: 10px;
+    }
+
+    .woocommerce .col2-set .col-1,
+    .woocommerce .col2-set .col-1,
+    .woocommerce .col2-set .col-2,
+    .woocommerce .col2-set .col-2,
+    .woocommerce form .form-row-first,
+    .woocommerce form .form-row-last,
+    .woocommerce form .form-row-first,
+    .woocommerce form .form-row-last {
+    float: none;
+    width: 100%;
+    }
+
+    .woocommerce .order_details ul,
+    .woocommerce .order_details ul,
+    .woocommerce .order_details,
+    .woocommerce .order_details {
+    padding:0;
+    }
+
+    .woocommerce .order_details li,
+    .woocommerce .order_details li {
+    clear: left;
+    margin-bottom: 10px;
+    border:0;
+    }
+
+    /* make buttons full width, text wide anyway, improves effectiveness */
+    #content table.cart td.actions .button,
+    .woocommerce #content table.cart td.actions .input-text,
+    .woocommerce #content table.cart td.actions input,
+    .woocommerce table.cart td.actions .button,
+    .woocommerce table.cart td.actions .input-text,
+    .woocommerce table.cart td.actions input,
+    .woocommerce #content table.cart td.actions .button,
+    .woocommerce #content table.cart td.actions .input-text,
+    .woocommerce #content table.cart td.actions input,
+    .woocommerce table.cart td.actions .button,
+    .woocommerce table.cart td.actions .input-text,
+    .woocommerce table.cart td.actions input {
+    width: 100%;
+    font-size:12px !important;
+    }
+
+    .woocommerce tfoot{
+    display:block !important;
+    }
+    .woocommerce tfoot td{
+    width:100% !important;
+    display:block !important;
+    }
+    /* keep coupon at 50% */
+    #content table.cart td.actions .coupon .button,
+    .woocommerce #content table.cart td.actions .coupon .input-text,
+    .woocommerce #content table.cart td.actions .coupon input,
+    .woocommerce table.cart td.actions .coupon .button,
+    .woocommerce table.cart td.actions .coupon .input-text,
+    .woocommerce table.cart td.actions .coupon input,
+    .woocommerce #content table.cart td.actions .coupon .button,
+    .woocommerce #content table.cart td.actions .coupon .input-text,
+    .woocommerce #content table.cart td.actions .coupon input,
+    .woocommerce table.cart td.actions .coupon .button,
+    .woocommerce table.cart td.actions .coupon .input-text,
+    .woocommerce table.cart td.actions .coupon input {
+    width: 48%;
+    font-size:12px !important;
+    }
+
+    /* clean up how coupon inputs display */
+    #content table.cart td.actions .coupon,
+    .woocommerce table.cart td.actions .coupon,
+    .woocommerce #content table.cart td.actions .coupon,
+    .woocommerce table.cart td.actions .coupon {
+    margin-top: 1.5em;
+    }
+
+    #content table.cart td.actions .coupon .input-text,
+    .woocommerce table.cart td.actions .coupon .input-text,
+    .woocommerce #content table.cart td.actions .coupon .input-text,
+    .woocommerce table.cart td.actions .coupon .input-text {
+    margin-bottom: 1em;
+    }
+
+    /* remove cross sells, they interfere with flow between cart and cart totals + shipping calculator */
+    .woocommerce .cart-collaterals .cross-sells,
+    .woocommerce .cart-collaterals .cross-sells {
+    display: none;
+    }
+
+    }
+    /* END Make the cart table responsive */
+    
+}
