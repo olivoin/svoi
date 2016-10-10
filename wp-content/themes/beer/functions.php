@@ -49,7 +49,7 @@ function woocommerce_template_loop_product_thumbnail(){
     $product_link = get_the_permalink();
     $product_img = get_the_post_thumbnail();
     echo '
-        <div class="col-2 padding-r-10">
+        <div class="margin-b-14">
             <a href="' . $product_link . '"> ' . $product_img . ' </a>
         </div>   
     ';
@@ -82,7 +82,6 @@ add_filter( 'woocommerce_single_product_summary', 'woocommerce_single_attr', 10,
             <li><span class="katalog-beer-params-title">ABV:</span> ' . $abv . '</li>
             <li><span class="katalog-beer-params-title">IBU:</span> ' . $ibu . '</li>
             <li><span class="katalog-beer-params-title">Объем:</span> ' . $volume . '</li>
-            <li><span class="katalog-beer-params-title">Кол-во единиц в таре:</span> ' . $tara_count . '</li>
         </ul>
     ';
     

@@ -39,7 +39,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         do_action( 'woocommerce_before_shop_loop_item_title' );
         ?>
 
-        <div class="col-2 padding-l-10">
+        <div class="col-6-6 padding-l-10">
 
         <?php 
         /**
@@ -89,7 +89,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
                 <li><span class="katalog-beer-params-title">ABV:</span> <?php the_field('abv'); ?></li>
                 <li><span class="katalog-beer-params-title">IBU:</span> <?php the_field('ibu'); ?></li>
                 <li><span class="katalog-beer-params-title">Объем:</span> <?php the_field('volume'); ?></li>
-                <li><span class="katalog-beer-params-title">Кол-во единиц в таре:</span> <?php the_field('tara_count'); ?></li>
             </ul>
             
         </div>

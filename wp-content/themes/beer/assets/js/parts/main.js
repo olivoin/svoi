@@ -2,24 +2,13 @@
 
 jQuery(document).ready(function($) {
     
-    setTimeout(function(){
-        wow = new WOW(
-            {
-                boxClass:     'wow',      // default
-                animateClass: 'animated', // default
-                offset:       150,          // default 
-                mobile:       true,       // default
-                live:         true        // default
-            }
-        )
-        wow.init();
-    }, 500);
+    $('.tcon.tcon-menu--xcross').click(function() {
+        $('.header-nav-menu').toggleClass('active');
+    });
     
-    setTimeout(function(){
-        $('#header a, .katalog-beer a, #footer a').click(function() {
-            $('.hide').animate({'opacity':'0'}, 300);
-        });
-    }, 500);
+    $('#header a, .katalog-beer a, #footer a').click(function() {
+        $('#page-preloader, .spinner').fadeIn();
+    });
     
     $(function(){
     jQuery('img.svg').each(function(){
@@ -59,11 +48,7 @@ jQuery(document).ready(function($) {
     
     // page menu
     
-    $(function() {
-        return $("[data-sticky_column]").stick_in_parent({
-            parent: "[data-sticky_parent]"
-        });
-    });
+    
     
     // select
     

@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.text-block .price {
+    color: #fff;
+}
+
 .product-single-attr,
 .custom-attributes{
     display: inline-block;
@@ -27,18 +31,6 @@
     padding-bottom: 2px;
     border-bottom: 2px solid #fafafa;
     display: inline-block;
-}
-
-.summary.entry-summary:after {
-    content: '';
-        position: absolute;
-    height: calc(100% + 120px);
-    width: 2px;
-    background-color: #565656;
-    top: 0;
-    left: calc(50% - 1px);
-    -webkit-transform: rotate(36deg);
-    z-index: -1;
 }
 
 body.single-product .katalog-page {
@@ -71,11 +63,9 @@ body.single-product .katalog-page {
     white-space: normal;
     font-size: 52px;
     color: #fafafa;
-    padding: 6px 20px;
-    background-color: #282828;
     position: relative;
     letter-spacing: 10px;
-    left: -140px;
+    left: -2px;
     margin-top: 0px;
     line-height: 60px;
 }
@@ -86,16 +76,6 @@ body.single-product .katalog-page {
 
 .product-images {
     position: relative;
-}
-
-.product-images:after {
-    content: '';
-        width: 170px;
-    height: 2px;
-    background-color: #565656;
-    position: absolute;
-    right: -190px;
-    top: 0;
 }
 
 .sale-persent {

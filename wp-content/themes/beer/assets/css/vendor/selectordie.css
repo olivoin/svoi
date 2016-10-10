@@ -44,7 +44,6 @@
         width: 100%;
         padding: 15px 40px 15px 10px;
         border: 2px solid #eee;
-        background: #121212;
         color: #fafafa;
         font-size: 11px;
         text-decoration: none;
@@ -114,7 +113,7 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            color: #868686;
+            color: #fff;
             padding-right: 15px;
         }
 

@@ -3,12 +3,22 @@
 }
 
 .woocommerce-page-head {
-    border-bottom: 2px solid #fafafa;
     padding-bottom: 20px;
     position: relative;
     left: -40px;
     padding-left: 40px;
     width: calc(100% + 40px);
+}
+
+.woocommerce-page-head:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -40%;
+    height: 8px;
+    width: 140%;
+    background: url(../images/mel2.svg) center center repeat-x;
+    background-size: contain;
 }
 
 .products {
@@ -77,13 +87,12 @@
 
 .price del:before {
     content: '';
-    width: 90%;
-    height: 1px;
+        width: 90%;
+    height: 2px;
     background-color: #989898;
     position: absolute;
-    top: 10px;
-    left: 0px;
-    -webkit-transform: rotate(-20deg);
+    top: 11px;
+    left: 0;
 }
 
 .price del {
