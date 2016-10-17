@@ -12,13 +12,13 @@ License: GPLv2
 function wptutsplus_login_logo() { ?>
 	<style type="text/css">
         body.login.login-action-login {
-            background: url(http://beerdealer.ru/wp-content/plugins/wp-login/media/body.jpg) center center no-repeat;
+            background: url(http://svoi.bar/wp-content/plugins/wp-login/media/body.jpg) center center no-repeat;
             background-size: cover;
         }
 		.login #login h1 a {
-            background-image: url(http://beerdealer.ru/wp-content/plugins/wp-login/media/logo.svg);
+            background-image: url(http://svoi.bar/wp-content/plugins/wp-login/media/logo.svg);
             background-size: cover;
-            width: 200px;
+            width: 260px;
             height: 260px;
 		}
 		.login #nav a, .login #backtoblog a {

@@ -37,76 +37,8 @@
     
     /* header */
     
-    .header-bottom-logo,
-    .header-top{
+    #header {
         display: none;
-    }
-    
-    .header-bottom {
-        padding: 5px 0;
-        position: relative;
-    }
-    
-    .header-cart {
-        -webkit-transform: scale(0.7);
-        margin-right: 50px;
-    }
-    
-    .header-mobile-search {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-    }
-    
-    .header-mobile-burger {
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        display: block;
-    }
-    
-    .header-mobile-nav {
-        border-radius: 3px;
-        display: none;
-        position: absolute;
-        background: #212121;
-        box-shadow: 0 0 31px 21px #000;
-        padding: 10px;
-        width: calc(100% - 20px);
-        left: 10px;
-        top: 135px;
-        z-index: 1;
-    }
-    
-    .header-mobile-nav.show {
-        display: block;
-    }
-    
-    .header-mobile-nav a {
-        color: #fafafa;
-    }
-     
-    .header-mobile-search .svg {
-        fill: #fafafa;
-        width: 35px;
-    }
-    
-    .header-bottom-search {
-        display: none;
-        position: absolute;
-        top: 74px;
-        z-index: 1;
-        background: #222;
-        left: 0;
-        box-shadow: 0 0 31px 21px #000;
-    }
-    
-    .header-bottom-search.show {
-        display: block;
-    }
-    
-    .section-title>* {
-        font-size: 18px;
     }
     
     /* global */

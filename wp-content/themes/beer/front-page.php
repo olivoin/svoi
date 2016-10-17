@@ -72,7 +72,7 @@
 <section class="front-tour">
     <div class="full-height dis-flex justify-content-center align-items-center text-center wow hide fadeInUp">
         <div class="front-tour-button col-1-6 dis-flex align-items-center">
-            <span class="margin-r-20">3D-тур по бару</span> <img src="<?php bloginfo('template_url'); ?>/assets/images/play.svg" class="svg">
+            
         </div>
     </div>
 </section>
@@ -83,41 +83,23 @@
             <div class="col-4-6 dis-flex flex-wrap-wrap text-block">
                 <div class="col-3-6 margin-b-40 padding-r-40">
                     <h3>IPA</h3>
-                    <p>Британский вид светлого эля с
-более сильным охмелением, чем у
-эля обычного. Британский вид
-светлого эля с более сильным
-охмелением, чем у эля обычного.</p>
+                    <p>сильно охмеленная разновидность пейл-эля. Хмель придаёт пиву богатый аромат и приятную горечь. Это наиболее востребованный стиль крафтового пива.</p>
                 </div>
                 <div class="col-3-6 margin-b-40">
                     <h3>Stout</h3>
-                    <p>Тёмный элевый сорт пива,
-приготовленный с использованием
-жжёного солода, получаемого путём
-прожарки ячменного зерна, с
-добавлением карамельного солода.
-Первоначально варился в Ирландии
-как разновидность портера</p>
+                    <p>Тёмный элевый сорт пива, приготовленный с использованием жжёного солода, получаемого путём прожарки ячменного зерна, с добавлением карамельного солода. Первоначально варился в Ирландии как разновидность портера. Очень популярен в Великобритании и Ирландии.</p>
                 </div>
                 <div class="col-3-6 margin-b-40 padding-r-40">
                     <h3>LAGER</h3>
-                    <p>Британский вид светлого эля с
-более сильным охмелением, чем у
-эля обычного. Британский вид
-светлого эля с более сильным
-охмелением, чем у эля обычного.</p>
+                    <p>Тип пива, при изготовлении которого используется низовое брожение с последующей ферментацией при низкой температуре. В настоящее время это наиболее распространённый тип пива, доля которого в мировом потреблении доходит до 80 %.</p>
                 </div>
                 <div class="col-3-6 margin-b-40">
                     <h3>SIDR</h3>
-                    <p>Британский вид светлого эля с
-более сильным охмелением, чем у
-эля обычного. Британский вид
-светлого эля с более сильным
-охмелением, чем у эля обычного.</p>
+                    <p>Слабоалкогольный напиток, который получают брожением яблочного, реже грушевого или айвового сока с помощью добавления культивированных дрожжей или натуральным способом. Грушевый сидр называется перри.</p>
                 </div>
             </div>
-            <div class="col-2-6">
-                
+            <div class="col-2-6 text-center">
+                <img src="http://www.craftdogs.com/wp-content/uploads/2013/07/beer.png">
             </div>
         </div>
     </div>
@@ -126,9 +108,7 @@
     <div class="full-height dis-flex justify-content-center">
         <div class="col-2-6 text-block wow hide fadeInUp">
             <h2>Бургеры и гриль</h2>
-            <p>Британский вид светлого эля с более сильным охмелением,
-чем у эля обычного. Британский вид светлого эля с более
-сильным охмелением, чем у эля обычного. </p>
+            <p>Помимо графтового пива, мы готовы предложить вам самую настоящую крафтовую кухню, которая состоит из: бургеров по традиционным американским рецептам, мясные деликатесы, картошка, и многое другое!</p>
         </div>
     </div>
 </section>
@@ -136,33 +116,17 @@
     <div class="wrap hor-wrap align-items-center full-height dis-flex">
         <div class="col-2-6 text-block wow hide fadeInUp">
             <h2>Доставка пива и еды</h2>
-            <p>Британский вид светлого эля с более сильным охмелением,
-чем у эля обычного. Британский вид светлого эля с более
-сильным охмелением, чем у эля обычного. </p>
-        </div>
-    </div>
-</section>
-<section class="front-quote">
-    <div class="full-height dis-flex justify-content-center">
-        <div class="col-2-6 text-block wow hide fadeInUp">
-            <h2>Открытая веранда</h2>
-            <p>Британский вид светлого эля с более сильным охмелением,
-чем у эля обычного. Британский вид светлого эля с более
-сильным охмелением, чем у эля обычного. </p>
+            <p>Мы готовы доставить нашу продукцию к порогу Вашей двери в любое время суток</p>
         </div>
     </div>
 </section>
 <section class="front-photos">
     <div class="dis-flex flex-wrap-wrap wow hide fadeInUp">
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
-        <div class="col-2-6" style="background-image:url(https://pp.vk.me/c626926/v626926506/99ea/-XIYRtWToNo.jpg);"></div>
+        <?php if(have_rows('фотографии')): ?>
+        <?php while(have_rows('фотографии')): the_row(); ?>
+        <div class="col-2-6" style="background-image:url(<?php the_sub_field('изображение'); ?>);"></div>
+        <?php endwhile; ?>
+        <?php endif; ?>
     </div>
 </section>
 <?php get_footer(); ?>

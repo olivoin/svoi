@@ -40,7 +40,7 @@
                 <a href="/"><img src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg"></a>
             </div>
             <div class="header-contacts">
-                8925-123-45-67
+                +7 (963) 787-32-89
             </div>
             <div class="header-callback">
                 написать нам

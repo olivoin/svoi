@@ -147,7 +147,7 @@ ins {
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 16px;
-    color: #c0c0c0;
+    color: #939393;
 }
 
 .text-block strong {
@@ -410,7 +410,12 @@ body.home #header {
 
 .header-callback {
     padding: 2px 30px;
-    border: 2px solid #fff;
+    border-style: solid;
+    border-width: 5px 1px 5px 2px;
+    -moz-border-image: url(borderblack.png) 52 33 47 66 round;
+    -webkit-border-image: url(borderblack.png) 52 33 47 66 round;
+    -o-border-image: url(borderblack.png) 52 33 47 66 round;
+    border-image: url(../images/border.svg) 52 33 47 66 fill round;
     cursor: pointer;
 }
 
@@ -464,6 +469,15 @@ body.home #header {
 #menu-menju-glavnoe li {
     display: inline-block;
     margin-left: 20px;
+}
+
+#breadcrumbs {
+    position: relative;
+    left: 98px;
+    color: #fafafa;
+    font-family: fiveminutes;
+    text-transform: uppercase;
+    font-size: 24px;
 }
 
 /* footer */
