@@ -104,7 +104,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['concat', 'uglify' , 'cssmin', 'autoprefixer', 'tinypng', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify' , 'cssmin', 'autoprefixer', 'watch']);
 
     
 };

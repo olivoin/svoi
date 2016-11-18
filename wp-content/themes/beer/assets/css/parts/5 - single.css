@@ -1,5 +1,6 @@
 .single-page {
     margin-bottom: 50px;
+    min-height: 850px;
 }
 
 .post-content {
@@ -23,14 +24,15 @@
     position: absolute;
     width: 120px;
     height: 2px;
-    background-color: #383838;
+    background-color: #fff;
     bottom: 0;
     left: calc(50% - 60px);
 }
 
 .single-header-title {
-    font-size: 52px;
+    font-size: 42px;
     color: #fafafa;
+    line-height: normal;
 }
 
 .single-header-date {

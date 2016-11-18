@@ -1,13 +1,34 @@
 <?php get_header(); ?>
 <section class="hello">
     <div class="color-white full-height dis-flex justify-content-center align-items-center">
-        <div class="hello-stat dis-flex align-items-center wow fadeInUp">
-            <div class="hello-stat-number">
-                <span id="odometer" class="odometer">300</span>
-            </div>
-            <div class="hello-stat-desc">
-                сортов<br>крафтового<br>пива
-            </div>
+        <div class="hello-stat wow fadeInUp">
+            <ul class="hello-stat-slider">
+                <li>
+                    <div class="hello-stat-number">
+                        <span>300</span>
+                    </div>
+                    <div class="hello-stat-desc">
+                        сортов<br>крафтового<br>пива
+                    </div>
+                </li> 
+                <li>
+                    <div class="hello-stat-number">
+                        <span>260</span>
+                    </div>
+                    <div class="hello-stat-desc">
+                        m<sup>2</sup><br>площадь<br>бара
+                    </div>
+                </li>
+                <li>
+                    <div class="hello-stat-number">
+                        <span>120</span>
+                    </div>
+                    <div class="hello-stat-desc">
+                        сидячих<br>мест<br>в баре
+                    </div>
+                </li>
+                
+            </ul>
         </div>
     </div>
     <div class="hello-video wow hide fadeIn" data-wow-delay="0.5s">
@@ -70,11 +91,7 @@
     </div>
 </section>
 <section class="front-tour">
-    <div class="full-height dis-flex justify-content-center align-items-center text-center wow hide fadeInUp">
-        <div class="front-tour-button col-1-6 dis-flex align-items-center">
-            
-        </div>
-    </div>
+    
 </section>
 <section class="front-services">
     <div class="wrap hor-wrap wow hide fadeInUp">
@@ -116,7 +133,7 @@
     <div class="wrap hor-wrap align-items-center full-height dis-flex">
         <div class="col-2-6 text-block wow hide fadeInUp">
             <h2>Доставка пива и еды</h2>
-            <p>Мы готовы доставить нашу продукцию к порогу Вашей двери в любое время суток</p>
+            <p>Совсем скоро мы дадим возможность всем заказывать крафтовое пиво и еду с сайта!</p>
         </div>
     </div>
 </section>

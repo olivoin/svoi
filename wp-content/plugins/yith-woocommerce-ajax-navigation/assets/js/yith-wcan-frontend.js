@@ -145,7 +145,12 @@ jQuery(function ($) {
 
             t.parents('div.yith-woo-ajax-navigation').find('a.yit-wcan-select-open').removeClass('active');
 
-            t.parent().find('div.yith-wcan-select-wrapper').show();
+            t.parent().find('div.yith-wcan-select-wrapper').css('z-index', '-1').animate({
+
+                visibility: "hidden",
+                opacity   : 0
+
+            }, 300);
         }
 
         //loading
@@ -156,7 +161,22 @@ jQuery(function ($) {
             $(yith_wcan.container).not('.ywcps-products').css('backgroundImage', 'url(' + yith_wcan_frontend.loader_url + ')');
         }
 
-        if( yith_wcan.is_mobile == 1 ){
+        // Check for scrollTop mode
+        var scrollTopEnabled = false;
+
+        if( yith_wcan.scroll_top_mode == 'both' ){
+            scrollTopEnabled = true;
+        }
+
+        else if( yith_wcan.scroll_top_mode == 'mobile' && yith_wcan.is_mobile == 1 ){
+            scrollTopEnabled = true;
+        }
+
+        else if( yith_wcan.scroll_top_mode == 'desktop' && yith_wcan.is_mobile != 1 ){
+            scrollTopEnabled = true;
+        }
+
+        if( scrollTopEnabled == true ){
             $(window).scrollTop( $(yith_wcan.scroll_top).offset().top );
         }
 
@@ -207,13 +227,17 @@ jQuery(function ($) {
                 }
 
 
-                var widget_reload = function (t) {
-                    var id = t.attr('id');
-                    t.html($(response).find('#' + id).html());
+                var widget_reload = function(t) {
 
-                    if (t.text() == '') {
+                    var id              = t.attr('id'),
+                    widget_in_response  = $(response).find('#' + id);
+
+                    if( widget_in_response.length == 0 ){
                         t.hide();
-                    } else {
+                    }
+
+                    else {
+                        t.html(widget_in_response.html());
                         t.show();
                     }
                 };

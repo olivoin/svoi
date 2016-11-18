@@ -3,8 +3,8 @@
 Contributors: yithemes
 Tags: woocommerce ajax product filter download, woocommerce, widget, ajax, ajax filtered nav, ajax navigation, ajax filtered navigation, woocommerce layered navigation, woocommerce layered nav, product filter, product filters, ajax product filter, woocommerce ajax product filter, woocommerce filters, sidebar filter, sidebar ajax filter, ajax price filter, price filter, product sorting, woocommerce filter, taxonomy filter, attribute filter, attributes filter, woocommerce product sort, ajax sort, woocommerce ajax product filter, advanced product filters, ajax product filters, filters, woocommerce ajax product filters, woocommerce product filters, woocommerce product filters, category filter, attribute filters, woocommerce products filter, woocommerce price filter, yit, yith, yithemes
 Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 3.0.7
+Tested up to: 4.6.1
+Stable tag: 3.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -158,6 +158,29 @@ If you want to see a demonstration version of the premium plugin, you can see it
 10. Admin: YIT Plugins -> Ajax Product Filter -> Custom Style
 
 == Changelog ==
+
+= 3.0.11 - Released: 05 October, 2016=
+
+* Tweak: Removed deprecated taxonomy count WooCommerce transient
+* Fixed: Wrong reset url if filter start from product category page
+
+= 3.0.10 - Released: 29 September, 2016 =
+
+* Fixed: Warning: in_array() expects at least 2 parameters, 1 given with query type set to OR
+* Fixed: Widget dropdown doesn't works on Flatsome Theme
+
+= 3.0.9 - Released: 31 Aug, 2016 =
+
+* Added: Support to Ultimate Member plugin
+* Fixed: Error on activation "the plugin required WooCommerce in order to works"
+* Fixed: Get term issue with old WordPress version
+
+= 3.0.8 - Released: Aug 11, 2016 =
+
+* Added: Support to WordPress 4.6RC2
+* Tweak: Removed deprecated arg to get_terms function
+* Fixed: Empty filter doesn't hide after ajax call
+* Fixed: Max execution time issue and 500 internal server error issue
 
 = 3.0.7 - Released: Jul 29, 2016 =
 

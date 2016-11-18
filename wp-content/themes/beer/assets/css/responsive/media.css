@@ -37,8 +37,22 @@
     
     /* header */
     
-    #header {
+    #header .col-3-6 {
+        width: 50%;
+    }
+    
+    .header-contacts,
+    .header-callback {
         display: none;
+    }
+    
+    .header-logo img {
+        width: 60px;
+    }
+    
+    .header-nav-menu {
+        position: relative;
+        top: 10px;
     }
     
     /* global */
@@ -63,11 +77,38 @@
     }
     
     .padding-r-40,
-    .padding-r-20{
-        padding-right: 0;
+    .padding-r-20,
+    .padding-l-40{
+        padding: 0;
     }
     
     /* front page */
+    
+    .front-services,
+    .front-about {
+        padding: 50px 0;
+    }
+    
+    .hello {
+        background: url(https://pp.vk.me/c633924/v633924506/2536/yffLyVJsE6A.jpg) center center no-repeat;
+        background-size: cover;
+        height: 440px;
+    }
+    
+    .hello-video {
+        display: none;
+    }
+    
+    .hello-stat-desc {
+        font-size: 16px;
+        margin-top: 5px;
+        padding-left: 20px;
+    }
+    
+    .hello-stat-number {
+        font-size: 78px;
+        padding-right: 20px;
+    }
     
     .front-slider > .wrap > .dis-flex,
     .front-future > .wrap > .dis-flex{
@@ -92,6 +133,23 @@
     
     .empty-slot {
         display: none;
+    }
+    
+    .front-about-title,
+    .front-services h2{
+        font-size: 42px;
+    }
+    
+    .text-block .front-about-desc {
+        font-size: 18px;
+    }
+    
+    .front-about-right {
+        margin-top: 25px;
+    }
+    
+    .front-tour {
+        height: 300px;
     }
     
     /* katalog */
@@ -148,6 +206,10 @@
     
     .producter-goods {
         display: none;
+    }
+    
+    .page-contacts .col-2-6 {
+        margin-bottom: 20px;
     }
     
     /* START Make the cart table responsive */

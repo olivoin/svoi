@@ -147,7 +147,7 @@ ins {
     margin-bottom: 20px;
     line-height: 1.6;
     font-size: 16px;
-    color: #939393;
+    color: #e4e4e4;
 }
 
 .text-block strong {
@@ -177,7 +177,8 @@ input[type="textarea"],
 input[type="number"],
 input[type="email"],
 input[type="tel"],
-input[type="search"]{
+input[type="search"],
+textarea{
     border: none;
     padding: 15px 25px;
     background: none;
@@ -194,7 +195,8 @@ input[type="textarea"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="number"],
-input[type="search"]:focus{
+input[type="search"]:focus,
+textarea{
     border-bottom: 2px solid #fafafa;
     outline: none;
     -webkit-appearance: none;
@@ -464,6 +466,9 @@ body.home #header {
 
 .header-nav a {
     color: #fafafa;
+    font-family: fiveminutes;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
 #menu-menju-glavnoe li {
@@ -518,9 +523,10 @@ body.home #header {
 }
 #page-preloader .spinner {
     position: absolute;
-    top: calc(50% - 70px);
-    left: calc(50% - 140px);
+    top: calc(50% - 101px);
+    left: calc(50% - 91px);
 }
+
 #page-preloader .spinner video {
     background-color: #fff;
 }

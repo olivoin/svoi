@@ -2,6 +2,15 @@
 
 jQuery(document).ready(function($) {
     
+    // hello slider
+    
+    $('.hello-stat-slider').bxSlider({
+        mode: 'vertical',
+        auto: true,
+        width: 455,
+        height: 140
+    });
+    
     $('.tcon.tcon-menu--xcross').click(function() {
         $('.header-nav-menu').toggleClass('active');
     });

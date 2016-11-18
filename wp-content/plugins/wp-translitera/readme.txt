@@ -1,10 +1,10 @@
 ﻿=== Plugin Name ===
 Contributors: YurchenkoEV
 Donate link: http://yur4enko.com/
-Tags: translate, rus-to-lat, Seo, tag, record, page, transliterate, transliteration
+Tags: translate, rus-to-lat, cyr-to-lat, Seo, tag, record, page, transliterate, transliteration
 Requires at least: 3.0
-Tested up to: 4.6
-Stable tag: 160707
+Tested up to: 4.7
+Stable tag: 161011
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,18 @@ Automatical from repository or unzip in plugins and activate in ACP.
 == Screenshots ==
 
 == Changelog ==
+
+= 161011 =
+* New update function (core)
+* Added exceptions for which types of files will not trnasliterirovatsya zaglovki (functional)
+* Always added the rules of the global localization (core)
+
+= 160819 =
+* Remove old functions (core)
+* Added curent version (db)
+* Added update functions (core)
+* Security fix (core)
+* Tested whith Wordpress 4.6 release and Wordpress 4.7alpha
 
 = 160707 =
 * Added transliterate request url for redirect old permalink
@@ -53,6 +65,9 @@ Automatical from repository or unzip in plugins and activate in ACP.
 * Added info.txt
 * Added ACP menu
 * Added the ability to rename the old labels
+
+= 15**** =
+http://yur4enko.com/moi-proekty/wp-translitera/istorija-izmenenij-wp-translitera-15-versij
 
 == Upgrade Notice ==
 After update deactivate and activate plugin

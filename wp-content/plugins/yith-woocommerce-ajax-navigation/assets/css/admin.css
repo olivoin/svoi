@@ -92,7 +92,8 @@ label.yith-wcan-reset-table{
 }
 
 div#yit_wcan_options_yith_wcan_dropdown_style-container .select_wrapper,
-div#yit_wcan_options_yith_wcan_tag_query_option-container .select_wrapper {
+div#yit_wcan_options_yith_wcan_tag_query_option-container .select_wrapper,
+div#yit_wcan_options_yith_wcan_scroll_top_mode-container .select_wrapper {
   width: 220px;
 }
 

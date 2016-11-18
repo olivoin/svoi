@@ -1,3 +1,7 @@
+body.home .text-block p {
+    color: #989898;
+}
+
 /* hello */
 
 .hello {
@@ -18,25 +22,24 @@
 }
 
 .hello-stat {
-   width: 455px;
+    width: 455px;
     padding: 0px 40px;
-    border: 2px solid #fafafa;
     position: relative;
-}
-
-.hello-stat:before {
-    content: '';
-    position: absolute;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    left: -22px;
-    top: -22px;
-    border: 2px solid #fafafa;
 }
 
 .hello-stat-number {
     font-size: 100px;
     padding-right: 30px;
+}
+
+.hello-stat-slider li {
+    display: flex;
+    align-items: center;
+    height: 140px;
+}
+
+.bx-controls-direction {
+    display: none;
 }
 
 .hello-stat-desc {

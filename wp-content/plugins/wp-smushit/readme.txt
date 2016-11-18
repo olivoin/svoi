@@ -1,13 +1,13 @@
 === WP Smush - Image Optimization ===
 Plugin Name: WP Smush - Image Optimization
-Version: 2.4.3
+Version: 2.4.5
 Author: WPMU DEV
 Author URI: http://premium.wpmudev.org/
 Contributors: WPMUDEV, alexdunae
 Tags: image optimization, image compression, attachment,Attachments,compress,Compress Image File,Compress Image Size,Compress JPG,Compressed JPG, Compression Image,Image,Images,JPG,Optimise,Optimize,Photo,Photos,Pictures,PNG,Reduce Image Size,Smush,Smush.it,Upload,WordPress Compression,WordPress Image Tool,Yahoo, Yahoo Smush.it
 Requires at least: 3.5
-Tested up to: 4.5.3
-Stable tag: 2.4.3
+Tested up to: 4.6
+Stable tag: 2.4.5
 License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 Reduce image file sizes, improve performance and boost your SEO using the free <a href="https://premium.wpmudev.org/">WPMU DEV</a> WordPress Smush API.
@@ -22,7 +22,7 @@ Our servers do all the heavy lifting. Strip hidden bulky information from your i
 
 Large image files may be slowing down your site without you even knowing it. WP Smush uses WPMU DEV’s super servers to quickly smush every single one of your images and cuts all the unnecessary data without slowing down your site.
 
-[youtube https://www.youtube.com/watch?v=BLqk4KPRz28&feature=youtu.be]
+[youtube https://www.youtube.com/watch?v=BDtgVJZEajg&feature=youtu.be]
 
 WP Smush meticulously scans every image you upload – or have already added to your site – cuts all the unnecessary data and scales it for you before adding it to your media library.
 
@@ -92,19 +92,32 @@ Yahoo's Smush.it API is gone forever. So WPMU DEV built our own free API that is
 
 == Changelog ==
 
+= 2.4.5 =
+
+* Fixed:
+    * Error "No file content sent" with WP 4.6
+
+= 2.4.4 =
+
+* Fixed:
+    * PNG to JPEG conversion not working for Multisite
+    * Stats Calculation, Use custom query to retrieve data
+    * Fixed warning and notices
+    * Added check for invalid membership ( Pro Users )
+    * thumbnails not being converted for PNG to JPEG conversion
+* Removed option to convert Transparent PNGs to JPEGs ( Pro Users )
+
 = 2.4.3 =
 
-    * Fixed:
-        * Image resizing not working on image upload
+* Fixed: Image resizing not working on image upload
 
 = 2.4.2 =
 
-    * Fixed:
-        * PHP 5.2 compatibility
+* Fixed: PHP 5.2 compatibility
 
 = 2.4.1 =
 
-    * Fixed: Conflict with Customizer
+* Fixed: Conflict with Customizer
 
 = 2.4 =
 

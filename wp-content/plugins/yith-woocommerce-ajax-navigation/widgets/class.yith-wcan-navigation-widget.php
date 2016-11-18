@@ -110,9 +110,9 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
                 }
 
                 if ( in_array( $display_type, apply_filters( 'yith_wcan_display_type_list', array( 'list' ) ) ) ) {
-                    $ancestors = get_terms(
-                        $taxonomy,
+                    $ancestors = yith_wcan_wp_get_terms(
                         array(
+                            'taxonomy'      => $taxonomy,
                             'parent'        => 0,
                             'hierarchical'  => true,
                             'hide_empty'    => false,
@@ -137,7 +137,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
                     echo "</ul>";
                 }
                 elseif ( $display_type == 'select' ) {
-                    $dropdown_label = __( 'Выбрать параметр:', 'yith-woocommerce-ajax-navigation' );
+                    $dropdown_label = __( 'Filters:', 'yith-woocommerce-ajax-navigation' );
                     ?>
 
                     <a class="yit-wcan-select-open" href="#"><?php echo apply_filters( 'yith_wcan_dropdown_default_label', $dropdown_label ) ?></a>
@@ -157,7 +157,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 
                         $_products_in_term = get_objects_in_term( $term->term_id, $taxonomy );
 
-                        set_transient( $transient_name, $_products_in_term );
+                        //set_transient( $transient_name, $_products_in_term );
                         //}
 
                         $option_is_set = ( isset( $_chosen_attributes[$taxonomy] ) && $in_array_function( $term->$filter_term_field, $_chosen_attributes[$taxonomy]['terms'] ) );
@@ -333,7 +333,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 
                         $_products_in_term = get_objects_in_term( $term->term_id, $taxonomy );
 
-                        set_transient( $transient_name, $_products_in_term );
+                        //set_transient( $transient_name, $_products_in_term );
                         //}
 
                         $option_is_set = ( isset( $_chosen_attributes[$taxonomy] ) && $in_array_function( $term->$filter_term_field, $_chosen_attributes[$taxonomy]['terms'] ) );
@@ -471,7 +471,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
                         }
 
                         // Query type Arg
-                        if ( $query_type == 'or' && ! ( sizeof( $current_filter ) == 1 && isset( $_chosen_attributes[$taxonomy]['terms'] ) && $in_array_function( $_chosen_attributes[$taxonomy]['terms'] ) && $in_array_function( $term->$filter_term_field, $_chosen_attributes[$taxonomy]['terms'] ) ) ) {
+                        if ( $query_type == 'or' && ! ( sizeof( $current_filter ) == 1 && isset( $_chosen_attributes[$taxonomy]['terms'] ) && is_array( $_chosen_attributes[$taxonomy]['terms'] ) && $in_array_function( $term->$filter_term_field, $_chosen_attributes[$taxonomy]['terms'] ) ) ) {
                             $link = add_query_arg( 'query_type_' . sanitize_title( $instance['attribute'] ), 'or', $link );
                         }
 
@@ -507,7 +507,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 
                         $_products_in_term = get_objects_in_term( $term->term_id, $taxonomy );
 
-                        set_transient( $transient_name, $_products_in_term );
+                        //set_transient( $transient_name, $_products_in_term );
                         //}
 
                         $option_is_set = ( isset( $_chosen_attributes[$taxonomy] ) && $in_array_function( $term->$filter_term_field, $_chosen_attributes[$taxonomy]['terms'] ) );
@@ -824,7 +824,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
             $attribute = $_POST['attribute'];
             $return    = array( 'message' => '', 'content' => $_POST );
 
-            $terms = get_terms( 'pa_' . $attribute, array( 'hide_empty' => '0' ) );
+            $terms = yith_wcan_wp_get_terms( array( 'taxonomy' => 'pa_' . $attribute, 'hide_empty' => '0' ) );
 
             $settings        = $this->get_settings();
             $widget_settings = $settings[ $this->number ];
@@ -894,7 +894,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
 
                     $_products_in_term = get_objects_in_term($term->term_id, $taxonomy);
 
-                    set_transient($transient_name, $_products_in_term);
+                    //set_transient($transient_name, $_products_in_term);
                     //}
 
                     $option_is_set = (isset($_chosen_attributes[$taxonomy]) && $in_array_function($term->term_id, $_chosen_attributes[$taxonomy]['terms']));
@@ -937,7 +937,7 @@ if ( ! class_exists( 'YITH_WCAN_Navigation_Widget' ) ) {
                             if ($name !== $taxonomy) {
 
                                 // Exclude query arg for current term archive
-                                while ($in_array_function($term->slug, $data['terms'])) {
+                                if ($in_array_function($term->slug, $data['terms'])) {
                                     $key = array_search($current_term, $data);
                                     unset($data['terms'][$key]);
                                 }

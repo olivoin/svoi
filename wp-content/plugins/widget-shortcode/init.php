@@ -3,7 +3,7 @@
 Plugin Name:    Widget Shortcode
 Description:    Output widgets using a simple shortcode.
 Author:         Hassan Derakhshandeh
-Version:        0.2.6
+Version:        0.2.8
 Text Domain:    widget-shortcode
 Domain Path:    /languages
 
@@ -88,7 +88,7 @@ class Widget_Shortcode {
 	 * @return void
 	 */
 	function in_widget_form( $widget, $return, $instance ) {
-		echo '<p>' . __( 'Shortcode', 'widget-shortcode' ) . ': ' . ( ( $widget->number == '__i__' ) ? __( 'Please save this first.', 'widget-shortcode' ) : '<code>[widget id="'. $widget->id .'"]</code>' ) . '</p>';
+		echo '<p>' . __( 'Shortcode', 'widget-shortcode' ) . ': ' . ( ( $widget->number == '__i__' ) ? __( 'Please save this first.', 'widget-shortcode' ) : '<input type="text" value="' . esc_attr( '[widget id="'. $widget->id .'"]' ) . '" readonly="readonly" class="widefat" onclick="this.select()" />' ) . '</p>';
 	}
 
 	/**
@@ -179,7 +179,7 @@ class Widget_Shortcode {
 		if( ! $class )
 			return;
 
-		$show_title = ( '0' == $title ) ? false : true;
+		$show_title = ( '0' === $title || 'no' === $title || false === $title ) ? false : true;
 
 		/* build the widget args that needs to be filtered through dynamic_sidebar_params */
 		$params = array(
@@ -201,8 +201,8 @@ class Widget_Shortcode {
 		$params = apply_filters( 'dynamic_sidebar_params', $params );
 
 		if( ! $show_title ) {
-			$params[0]['before_title'] = '<h3 class="widgettitle">';
-			$params[0]['after_title'] = '</h3>';
+			$params[0]['before_title'] = '<!-- widget_shortcode_before_title -->';
+			$params[0]['after_title'] = '<!-- widget_shortcode_after_title -->';
 		} elseif( is_string( $title ) && strlen( $title ) > 0 ) {
 			$instance['title'] = $title;
 		}
@@ -227,7 +227,7 @@ class Widget_Shortcode {
 
 		// supress the title if we wish
 		if( ! $show_title ) {
-			$content = preg_replace( '/<h3 class="widgettitle">(.*?)<\/h3>/', '', $content );
+			$content = preg_replace( '/<!-- widget_shortcode_before_title -->(.*?)<!-- widget_shortcode_after_title -->/', '', $content );
 		}
 
 		if( $echo !== true )
